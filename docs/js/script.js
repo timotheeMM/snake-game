@@ -2,7 +2,6 @@ import Game from "./game.js";
 
 
 window.onload = () => {
-
     let myGame = new Game();
     myGame.init();
 

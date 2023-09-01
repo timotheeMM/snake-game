@@ -1,23 +1,23 @@
 export default class Drawing { 
     static gameOver(ctx, centreX, centreY) {
         ctx.save();
-        ctx.font = "bold 70px sans-serif";
+        ctx.font = "bold 48px sans-serif";
         ctx.fillStyle = "#000";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.strokeStyle = "white";
         ctx.lineWidth = 5;
-        ctx.strokeText("Game Over", centreX, centreY - 180);
-        ctx.fillText("Game Over", centreX, centreY - 180);
-        ctx.font = "bold 30px sans-serif";
-        ctx.strokeText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 120);
-        ctx.fillText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 120);
+        ctx.strokeText("Game Over", centreX, centreY - 144);
+        ctx.fillText("Game Over", centreX, centreY - 144);
+        ctx.font = "bold 24px sans-serif";
+        ctx.strokeText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 96);
+        ctx.fillText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 96);
         ctx.restore();
     }
 
     static drawScore(ctx, centreX, centreY, score) {
         ctx.save();
-        ctx.font = "bold 200px sans-serif";
+        ctx.font = "bold 160px sans-serif";
         ctx.fillStyle = "gray";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
