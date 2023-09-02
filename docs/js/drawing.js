@@ -10,8 +10,8 @@ export default class Drawing {
         ctx.strokeText("Game Over", centreX, centreY - 144);
         ctx.fillText("Game Over", centreX, centreY - 144);
         ctx.font = "bold 24px sans-serif";
-        ctx.strokeText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 96);
-        ctx.fillText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 96);
+        ctx.strokeText("Press space key to play again", centreX, centreY - 96);
+        ctx.fillText("Press space key to play again", centreX, centreY - 96);
         ctx.restore();
     }
 
