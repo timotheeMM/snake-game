@@ -1,4 +1,4 @@
-# :snake: SNAKE GAME :snake:
+# <h1 style="text-align: center;">:snake: SNAKE GAME :snake:</h1>
 
 ## What is this project ?
 
