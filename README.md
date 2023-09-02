@@ -28,6 +28,8 @@ If you want to contribute to this project you are welcome! For this, there are a
 
 4. Make your changes.
 
+> Important: add your github username to the CONTRIBUTORS.md file following the syntax of the creator.
+
 5. Add the files you have modified:
 
     ```sh
