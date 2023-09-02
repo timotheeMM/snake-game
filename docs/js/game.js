@@ -51,6 +51,9 @@ export default class Game {
             if(this.snakee.isEatingApple(this.applee)) {
                 this.score++;
                 this.snakee.ateApple = true;
+                
+                this.snakee.color = this.applee.color;
+                this.changeColor('apple');
 
                 do {
                     this.applee.setNewPosition(this.widthInBlocks, this.heightInBlocks);
