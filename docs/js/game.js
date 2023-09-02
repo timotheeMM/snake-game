@@ -4,7 +4,7 @@ import Drawing from "./drawing.js";
 
 
 export default class Game {
-    constructor(canvasWidth = 600, canvasHeight = 400) {
+    constructor(canvasWidth = 800, canvasHeight = 400) {
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
         this.blockSize = 20;
@@ -24,10 +24,10 @@ export default class Game {
     init() {
         this.canvas.width = this.canvasWidth;
         this.canvas.height = this.canvasHeight;
-        this.canvas.style.border = "25px solid gray";
+        this.canvas.style.border = "25px solid white";
         this.canvas.style.margin = "40px auto";
         this.canvas.style.display = "block";
-        this.canvas.style.backgroundColor = "#ddd";
+        this.canvas.style.backgroundColor = "#00f";
         document.body.appendChild(this.canvas);
         this.launch();
     }

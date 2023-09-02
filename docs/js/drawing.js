@@ -18,7 +18,7 @@ export default class Drawing {
     static drawScore(ctx, centreX, centreY, score) {
         ctx.save();
         ctx.font = "bold 160px sans-serif";
-        ctx.fillStyle = "gray";
+        ctx.fillStyle = "white";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillText(score.toString(), centreX, centreY);
