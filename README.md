@@ -1,4 +1,4 @@
-# SNAKE GAME
+# :snake: SNAKE GAME :snake:
 
 ## What is this project ?
 
