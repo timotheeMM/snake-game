@@ -2,6 +2,7 @@ export default class Snake {
     constructor(direction, ...body) {
         this.body = body;
         this.direction = direction;
+        this.color = "#3c3"
         this.ateApple = false;
     }
 

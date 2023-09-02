@@ -8,6 +8,8 @@ This project is a new version of the famous snake game. This version is coded wi
 
 To play the game go to this website: [https://timotheemm.github.io/snake-game/](https://timotheemm.github.io/snake-game/)
 
+> little trick: press the 'a' key to change the color of the apple and the 's' key to change the color of the snake.
+
 ## You want to contribute ?
 
 If you want to contribute to this project you are welcome! For this, there are a few steps:

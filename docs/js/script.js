@@ -28,10 +28,18 @@ window.onload = () => {
             
             case 32:
                 myGame.launch();
-                return;
+                break;
+
+            case 65:
+                myGame.changeColor("apple");
+                break;
+            
+            case 83:
+                myGame.changeColor("snake");
+                break;
             
             default:
-                return;
+                break;
         }
 
         myGame.snakee.setDirecton(newDirection);

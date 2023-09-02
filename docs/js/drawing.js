@@ -27,7 +27,7 @@ export default class Drawing {
 
     static drawSnake(ctx, blockSize, snake) {
         ctx.save();
-        ctx.fillStyle = "#ff0000";
+        ctx.fillStyle = snake.color;
         
         for(let block of snake.body) {
             this.drawBlock(ctx, block, blockSize);
@@ -41,7 +41,7 @@ export default class Drawing {
         const x = apple.position[0] * blockSize + radius;
         const y = apple.position[1] * blockSize + radius;
         ctx.save();
-        ctx.fillStyle = "#33cc33";
+        ctx.fillStyle = apple.color;
         ctx.beginPath();
         ctx.arc(x, y, radius, 0, Math.PI * 2, true);
         ctx.fill();

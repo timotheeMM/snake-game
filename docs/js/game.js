@@ -14,6 +14,7 @@ export default class Game {
         this.heightInBlocks = this.canvasHeight / this.blockSize;
         this.centreX = this.canvasWidth / 2;
         this.centreY = this.canvasHeight / 2;
+        this.colors = ["#ff8b00ff", "#ffee02ff", "#f1258bff", "#3c3", "#f00"];
         this.delay;
         this.snakee;
         this.applee;
@@ -70,5 +71,25 @@ export default class Game {
 
     speedUp() {
         this.delay /= 1.25;
+    }
+
+    changeColor(snakeOrApple) {
+        let toChange;
+        let other;
+        let newColor;
+
+        if(snakeOrApple === "snake") {
+            toChange = this.snakee;
+            other = this.applee
+        } else {
+            toChange = this.applee;
+            other = this.snakee
+        }
+
+        do {
+            newColor = this.colors[Math.floor(Math.random() * 5)]
+        } while(toChange.color === newColor || newColor === other.color);
+
+        toChange.color = newColor;
     }
 }
