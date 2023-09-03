@@ -5,6 +5,10 @@ window.onload = () => {
     let myGame = new Game();
     myGame.init();
 
+    /**
+     * function that processes keyboard keys
+     * @param {KeyboardEvent} e pressed key
+     */
     document.onkeydown = (e) => {
         const key = e.keyCode;
         let newDirection;

@@ -1,5 +1,12 @@
-export default class Drawing { 
+export default class Drawing {
+    /**
+     * function that displays "game over" and the message to replay on screen
+     * @param {CanvasRenderingContext2D} ctx context
+     * @param {Number} centreX center of the canvas on the x axis
+     * @param {Number} centreY center of the canvas on the y axis
+     */
     static gameOver(ctx, centreX, centreY) {
+        console.log(ctx)
         ctx.save();
         ctx.font = "bold 48px sans-serif";
         ctx.fillStyle = "#000";
@@ -15,6 +22,13 @@ export default class Drawing {
         ctx.restore();
     }
 
+    /**
+     * function that displays the score on the screen
+     * @param {CanvasRenderingContext2D} ctx context
+     * @param {Number} centreX center of the canvas on the x axis
+     * @param {Number} centreY center of the canvas on the y axis
+     * @param {number} score score
+     */
     static drawScore(ctx, centreX, centreY, score) {
         ctx.save();
         ctx.font = "bold 160px sans-serif";
@@ -25,6 +39,12 @@ export default class Drawing {
         ctx.restore();
     }
 
+    /**
+     * function that draws the snake 
+     * @param {CanvasRenderingContext2D} ctx context
+     * @param {Number} blockSize block size
+     * @param {Object} snake snake
+     */
     static drawSnake(ctx, blockSize, snake) {
         ctx.save();
         ctx.fillStyle = snake.color;
@@ -36,6 +56,12 @@ export default class Drawing {
         ctx.restore();
     }
 
+    /**
+     * function that draws the apple 
+     * @param {CanvasRenderingContext2D} ctx context
+     * @param {Number} blockSize block size
+     * @param {Object} apple apple
+     */
     static drawApple(ctx, blockSize, apple) {
         const radius = blockSize / 2;
         const x = apple.position[0] * blockSize + radius;
@@ -48,6 +74,12 @@ export default class Drawing {
         ctx.restore();
     }
 
+    /**
+     * function that draws a block
+     * @param {CanvasRenderingContext2D} ctx context
+     * @param {Array} position block position
+     * @param {Number} blockSize block size
+     */
     static drawBlock(ctx, position, blockSize) {
         const [x, y] = position;
         ctx.fillRect(x * blockSize, y * blockSize, blockSize, blockSize);

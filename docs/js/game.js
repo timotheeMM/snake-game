@@ -4,6 +4,12 @@ import Drawing from "./drawing.js";
 
 
 export default class Game {
+    /**
+     * game class constructor
+     * @param {Number} canvasWidth canvas width
+     * @param {Number} canvasHeight canvas height
+     * @constructor
+     */
     constructor(canvasWidth = 600, canvasHeight = 400) {
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
@@ -22,6 +28,9 @@ export default class Game {
         this.timeout;
     }
 
+    /**
+     * function that initializes the canvas
+     */
     init() {
         this.canvas.width = this.canvasWidth;
         this.canvas.height = this.canvasHeight;
@@ -33,6 +42,9 @@ export default class Game {
         this.launch();
     }
 
+    /**
+     * function that launches the game
+     */
     launch() {
         this.snakee = new Snake("right", [6, 4], [5, 4], [4, 4], [3, 4], [2, 4]);
         this.applee = new Apple();
@@ -42,6 +54,9 @@ export default class Game {
         this.refreshCanvas();
     }
 
+    /**
+     * function that updates the canvas according to the position of the snake and the apple
+     */
     refreshCanvas() {
         this.snakee.advance();
 
@@ -72,10 +87,17 @@ export default class Game {
         }
     }
 
+    /**
+     * function that multiplies the speed of the snake by 1.25
+     */
     speedUp() {
         this.delay /= 1.25;
     }
 
+    /**
+     * function that changes the color of the snake or apple
+     * @param {String} snakeOrApple "snake" or "apple"
+     */
     changeColor(snakeOrApple) {
         let toChange;
         let other;

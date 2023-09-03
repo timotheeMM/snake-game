@@ -1,4 +1,10 @@
 export default class Snake {
+    /**
+     * snake class constructor
+     * @param {String} direction snake direction
+     * @param  {Array} body snake body
+     * @constructor
+     */
     constructor(direction, ...body) {
         this.body = body;
         this.direction = direction;
@@ -6,6 +12,9 @@ export default class Snake {
         this.ateApple = false;
     }
 
+    /**
+     * function that moves the snake according to the direction
+     */
     advance() {
         const nextPosition = this.body[0].slice();
 
@@ -39,6 +48,10 @@ export default class Snake {
         }
     }
 
+    /**
+     * function that changes the direction of the snake if allowed
+     * @param {String} newDirection new snake direction
+     */
     setDirecton(newDirection) {
         let allowedDirections;
 
@@ -62,6 +75,12 @@ export default class Snake {
         }
     }
 
+    /**
+     * function that checks if the snake has hit a wall or itself
+     * @param {Number} widthInBlocks number of blocks in width
+     * @param {Number} heightInBlocks number of blocks in height
+     * @returns {Boolean} if the snake hit something or not 
+     */
     checkCollision(widthInBlocks, heightInBlocks) {
         let wallCollision = false;
         let snakeCollision = false;
@@ -88,6 +107,11 @@ export default class Snake {
         return wallCollision || snakeCollision;
     }
 
+    /**
+     * function that checks if the snake is eating the apple
+     * @param {Object} appleToEat apple to eat 
+     * @returns {Boolean} if the snake is eating the apple or not
+     */
     isEatingApple(appleToEat) {
         const head = this.body[0];
 
