@@ -25,7 +25,7 @@ export default class Game {
     init() {
         this.canvas.width = this.canvasWidth;
         this.canvas.height = this.canvasHeight;
-        this.canvas.style.border = "25px solid white";
+        this.canvas.style.border = "25px solid skyblue";
         this.canvas.style.margin = "40px auto";
         this.canvas.style.display = "block";
         this.canvas.style.backgroundColor = "#00f";
