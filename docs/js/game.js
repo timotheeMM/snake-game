@@ -10,7 +10,7 @@ export default class Game {
      * @param {Number} canvasHeight canvas height
      * @constructor
      */
-    constructor(canvasWidth = 600, canvasHeight = 400) {
+    constructor(canvasWidth = 660, canvasHeight = 380) {
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
         this.blockSize = 20;
@@ -116,19 +116,5 @@ export default class Game {
         } while(toChange.color === newColor || newColor === other.color);
 
         toChange.color = newColor;
-    }
-
-    /**
-     * function that activates the light mode
-     */
-    activateLightMode() {
-        document.styleSheets[0].cssRules[0].style.backgroundColor = "white";
-    }
-
-    /**
-     * function that activates the dark mode
-     */
-    activateDarkMode() {
-        document.styleSheets[0].cssRules[0].style.backgroundColor = "black";
     }
 }

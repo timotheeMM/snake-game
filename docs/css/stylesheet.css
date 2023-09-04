@@ -1,10 +1,32 @@
+:root {
+    --background-color-and-button-text: #222;
+    --background-button: #fff;
+}
+
 body {
-    background-color: black;
+    background-color: var(--background-color-and-button-text);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 58px;
     font-family: sans-serif;
     text-align: center;
     color: #96a820ff;
+}
+
+.changeTheme {
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    background: var(--background-button);
+    color: var(--background-color-and-button-text);
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
