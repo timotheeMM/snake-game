@@ -1,6 +1,7 @@
 :root {
     --background-color-and-button-text: #222;
     --background-button: #fff;
+    --invert: 100%;
 }
 
 body {
@@ -17,13 +18,17 @@ h1 {
     color: #96a820ff;
 }
 
+canvas {
+    filter: invert(var(--invert));
+}
+
 .changeTheme {
     cursor: pointer;
-    width: 160px;
-    height: 40px;
+    width: 128px;
+    height: 32px;
     background: var(--background-button);
     color: var(--background-color-and-button-text);
-    font-size: 15px;
+    font-size: 12px;
     font-family: sans-serif;
     border-radius: 5px;
     display: flex;
