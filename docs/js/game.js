@@ -117,4 +117,18 @@ export default class Game {
 
         toChange.color = newColor;
     }
+
+    /**
+     * function that activates the light mode
+     */
+    activateLightMode() {
+        document.styleSheets[0].cssRules[0].style.backgroundColor = "white";
+    }
+
+    /**
+     * function that activates the dark mode
+     */
+    activateDarkMode() {
+        document.styleSheets[0].cssRules[0].style.backgroundColor = "black";
+    }
 }
