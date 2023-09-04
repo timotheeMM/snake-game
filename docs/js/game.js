@@ -35,7 +35,7 @@ export default class Game {
         this.canvas.width = this.canvasWidth;
         this.canvas.height = this.canvasHeight;
         this.canvas.style.border = "25px solid skyblue";
-        this.canvas.style.margin = "20px auto";
+        this.canvas.style.margin = "40px auto";
         this.canvas.style.display = "block";
         this.canvas.style.backgroundColor = "#00f";
         document.body.appendChild(this.canvas);
