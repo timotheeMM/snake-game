@@ -6,7 +6,6 @@ export default class Drawing {
      * @param {Number} centreY center of the canvas on the y axis
      */
     static gameOver(ctx, centreX, centreY) {
-        console.log(ctx)
         ctx.save();
         ctx.font = "bold 48px sans-serif";
         ctx.fillStyle = "#000";
