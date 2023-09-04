@@ -13,11 +13,11 @@ export default class Drawing {
         ctx.textBaseline = "middle";
         ctx.strokeStyle = "white";
         ctx.lineWidth = 5;
-        ctx.strokeText("Game Over", centreX, centreY - 144);
-        ctx.fillText("Game Over", centreX, centreY - 144);
-        ctx.font = "bold 20px sans-serif";
-        ctx.strokeText("Press space key to play again", centreX, centreY - 96);
-        ctx.fillText("Press space key to play again", centreX, centreY - 96);
+        ctx.strokeText("Game Over", centreX, centreY - 120);
+        ctx.fillText("Game Over", centreX, centreY - 120);
+        ctx.font = "bold 18px sans-serif";
+        ctx.strokeText("Press space key to play again", centreX, centreY - 80);
+        ctx.fillText("Press space key to play again", centreX, centreY - 80);
         ctx.restore();
     }
 
@@ -30,7 +30,7 @@ export default class Drawing {
      */
     static drawScore(ctx, centreX, centreY, score) {
         ctx.save();
-        ctx.font = "bold 120px sans-serif";
+        ctx.font = "bold 100px sans-serif";
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";

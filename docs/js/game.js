@@ -10,7 +10,7 @@ export default class Game {
      * @param {Number} canvasHeight canvas height
      * @constructor
      */
-    constructor(canvasWidth = 660, canvasHeight = 380) {
+    constructor(canvasWidth = 640, canvasHeight = 360) {
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
         this.blockSize = 20;
