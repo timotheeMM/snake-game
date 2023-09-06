@@ -2,19 +2,19 @@
 
 ## What is this project ?
 
-This project is a new version of the famous snake game. This version is coded with HTML canvas and Javascript.
+This project is a new version of the famous snake game. This version is coded with HTML canvas and JavaScript.
 
 ## Play the game
 
-To play the game go to this website: [https://timotheemm.github.io/snake-game/](https://timotheemm.github.io/snake-game/)
+To play the game, go to this website: [https://timotheemm.github.io/snake-game/](https://timotheemm.github.io/snake-game/)
 
 > little trick: press the 'a' key to change the color of the apple and the 's' key to change the color of the snake.
 
 ## You want to contribute ?
 
-If you want to contribute to this project you are welcome! For this, there are a few steps:
+If you want to contribute to this project, you are welcome! For this, there are a few steps:
 
-1. Create a fork of this project in your github account.
+1. Create a fork of this project in your GitHub account.
 2. Clone this fork on your machine with:
 
     ```sh
@@ -44,12 +44,12 @@ If you want to contribute to this project you are welcome! For this, there are a
     git commit -m "I changed... and I added..."
     ```
 
-7. Push your changes to github:
+7. Push your changes to GitHub:
 
     ```sh
     git push -u origin my-branch
     ```
 
-8. Make a pull request by going to the project fork page and clicking on "Contribute > Open pull request". A window will open and you will be able to explain in more detail all the changes you have made.
+8. Make a pull request by going to the project fork page and clicking on "Contribute > Open pull request". A window will open, and you will be able to explain in more detail all the changes you have made.
 
 9. Validate and then wait for validation... :blush:
