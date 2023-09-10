@@ -1,4 +1,4 @@
-# <h1 align="center">:snake: SNAKE GAME :snake:</h1>
+<h1 align="center">:snake: SNAKE GAME :snake:</h1>
 
 ## What is this project ?
 
