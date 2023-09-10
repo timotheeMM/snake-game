@@ -41,7 +41,7 @@ If you want to contribute to this project, you are welcome! For this, there are 
 6. Make a commit where you say everything you’ve done:
 
     ```sh
-    git commit -m "I changed... and I added..."
+    git commit -m "change... and add..."
     ```
 
 7. Push your changes to GitHub:
