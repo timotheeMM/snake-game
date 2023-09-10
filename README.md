@@ -19,7 +19,7 @@ If you want to contribute to this project, you are welcome! For this, there are 
 
     ```sh
     # make sure that git is installed before doing this
-    git clone https://github.com/your-username/snake-game
+    git clone https://github.com/your-username/snake-game.git
     ```
 
 3. Create a new branch that describes what you want to do by entering:
