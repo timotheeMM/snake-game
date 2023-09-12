@@ -112,7 +112,7 @@ export default class Game {
         }
 
         do {
-            newColor = this.colors[Math.floor(Math.random() * 5)]
+            newColor = this.colors[Math.round(Math.random() * 5)]
         } while(toChange.color === newColor || newColor === other.color);
 
         toChange.color = newColor;
