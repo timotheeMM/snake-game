@@ -53,3 +53,7 @@ If you want to contribute to this project, you are welcome! For this, there are 
 8. Make a pull request by going to the project fork page and clicking on "Contribute > Open pull request". A window will open, and you will be able to explain in more detail all the changes you have made.
 
 9. Validate and then wait for validation... :blush:
+
+## License
+
+This project is under a [MIT license](https://github.com/timotheeMM/snake-game/blob/main/LICENSE).
